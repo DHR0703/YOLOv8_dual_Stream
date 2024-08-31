@@ -14,4 +14,4 @@
 ### 谷歌云盘
 https://drive.google.com/file/d/1q8ADmzlx0v_DcgkVKSn5sjA1ZDqhoqtP/view?usp=drive_link
 
-## ![系统结构图](/论文素材/系统结构.png)
+## ![系统结构图](/sys.png)
