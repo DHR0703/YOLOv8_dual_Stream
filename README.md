@@ -30,27 +30,27 @@ https://drive.google.com/file/d/1q8ADmzlx0v_DcgkVKSn5sjA1ZDqhoqtP/view?usp=drive
 ## Experimental index/实验指标
 ### Results on a jumbled stacked box-shaped dataset/在杂乱堆叠的盒状物体数据集上的结果
 | **Modality** | **Method** | **mAP50** | **mAP50-95** |
-|:------------:|:----------:|:---------:|:-------------:|
-| RGB          | YOLOv8     | 0.946     | 0.881         |
-| RGBD         | CMMHA      | 0.946     | 0.881         |
-| RGBD         | REF        | 0.930     | 0.872         |
-| RGBD         | SLBAF      | 0.949     | 0.892         |
-| RGBD         | FIRI       | 0.892     | 0.835         |
-| RGBD         | CFT        | 0.928     | 0.878         |
-| RGBD         | SuperYOLO  | 0.953     | 0.896         |
-| RGBD         | oursOUR    | 0.954     | 0.886         |
+|:------------:|:----------:|:---------:|:------------:|
+| RGB          | YOLOv8     | 0.946     | 0.881        |
+| RGBD         | CMMHA      | 0.930     | 0.872        |
+| RGBD         | REF        | 0.949     | 0.892        |
+| RGBD         | SLBAF      | 0.892     | 0.835        |
+| RGBD         | FIRI       | 0.928     | 0.878        |
+| RGBD         | CFT        | 0.953     | 0.896        |
+| RGBD         | SuperYOLO  | 0.954     | 0.886        |
+| RGBD         | ours       | **0.985**     | **0.901**        |
 
 ### Results on the LLVIP infrared dataset/在LLVIP红外数据集上的结果
 | **Modality** | **Method**               | **mAP50** | **mAP50-95** |
 |:------------:|:------------------------:|:---------:|:------------:|
 | RGB          | (2023)YOLOv8         | 0.908     | 0.535        |
 | RGB+IR       | (2023)TFDet         | 0.957     | 0.561        |
-| RGB+IR       | (2021)CFT            | 0.975     | 0.636        |
+| RGB+IR       | (2021)CFT            | **0.975**     | 0.636        |
 | RGB+IR       | (2024)AMFD           | 0.952     | 0.583        |
 | RGB+IR       | (2024)TEXT-IF        | 0.941     | 0.602        |
 | RGB+IR       | (2023)CSSA          | 0.943     | 0.592        |
 | RGB+IR       | (2024)Mamba-Fusion   | 0.97      | 0.63         |
 | RGB+IR       | (2023)DIVFusion      | 0.898     | 0.52         |
 | RGB+IR       | (2024)RSDet          | 0.958     | 0.613        |
-| RGB+IR       | ours                     | 0.97      | 0.653        |
+| RGB+IR       | ours                     | 0.97      | **0.653**        |
 
