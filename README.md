@@ -16,6 +16,8 @@ In industrial production, efficient sorting and precise placement of box-shaped 
  center point error of 6.45mm, and average errors of 4.18° for plane normal vectors and 6.85° for
  object angles. Furthermore, our method also demonstrates superior performance compared to state
 of-the-art approaches on the LLVIP infrared dataset.
+
+**The source code will be submitted after the paper is accepted.**
 # Grasping demo video:
 ## youtube
 https://youtu.be/IVwSE0scVIk
