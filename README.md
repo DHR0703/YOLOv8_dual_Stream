@@ -1,38 +1,40 @@
 # DS-YOLO: A Robotic Grasping Method of Box-Shaped Objects Based on Dual-Stream YOLO
-This system is based on the improved [YOLOv8](https://github.com/ultralytics/ultralytics?tab=readme-ov-file) Dual-stream RGBD instance segmentation network + feature point matching pose estimation to achieve the suction system for box objects
 
-Visually, the rendered depth map can better help the network distinguish the box-like objects in the stacked state, and improve the segmentation index in complex stacked scenes
 
-After obtaining the segmentation result of the object to be grabbed, the system matches the feature points with the template, and the RT matrix of the template to the actual scene can be obtained, so as to obtain the pose of the object to be grabbed
-
-The project code will be uploaded after the paper is accepted
-
-本系统是基于[YOLOv8](https://github.com/ultralytics/ultralytics?tab=readme-ov-file)改进的到双流RGBD实例分割网络+特征点匹配位姿估计来实现的针对针对盒状物体的吸取系统
-
-经过渲染后的深度图在视觉上可以更好地帮助网络区分堆叠状态下的盒状物体，提高复杂堆叠场景下的分割指标
-
-在获得了待抓取物体的分割结果后，系统将其与模板进行特征点匹配，可以获得模板到实际场景的RT矩阵，以此获得待抓取物体的位姿
-
-项目代码将在论文被录用后上传
-# Grasping demo video/实际抓取实验演示视频
+In industrial production, efficient sorting and precise placement of box-shaped objects
+ have always been a key task, traditionally relying heavily on manual operation. Given the rapid
+ development of industrial automation, exploring automation solutions to replace human labor has
+ become an inevitable trend. At present, there is still a lack of box-shaped object classification and
+ grasping methods for cluttered stacking scenes. To address this issue, this paper proposes an RGBD
+ instance segmentation network based on the [YOLOv8](https://github.com/ultralytics/ultralytics?tab=readme-ov-file)  framework, called as DS-YOLO, and then
+ combined with feature point matching algorithm, we can achieve precise recognition, grasping, and
+ orderly placement of box-shaped objects in complex stacking environments. Due to the lack of a
+ dataset for box-shaped objects, we created a synthetic dataset, referred to as Snack Box. Compared
+ to state-of-the-art methods, the model trained on the Snack Box dataset using DS-YOLO showed
+ 3.9% and 2% higher mAP50 and mAP50-90 metrics, respectively. In experiments involving 1,000
+ scenarios from the synthetic dataset, 93.3% of the scenes provided grasp parameters, with an average
+ center point error of 6.45mm, and average errors of 4.18° for plane normal vectors and 6.85° for
+ object angles. Furthermore, our method also demonstrates superior performance compared to state
+of-the-art approaches on the LLVIP infrared dataset.
+# Grasping demo video:
 ## youtube
 https://youtu.be/IVwSE0scVIk
 ## bilibili
 https://www.bilibili.com/video/BV1kUHDeZEVd
 
-## Datasets Download/数据集下载:
+## Datasets Download:
 ### Google Cloud Drive
 https://drive.google.com/file/d/1q8ADmzlx0v_DcgkVKSn5sjA1ZDqhoqtP/view?usp=drive_link
 
-### 百度网盘
+### baidu pan
 链接：https://pan.baidu.com/s/1gy5uSEOkZksnSurz3uXQcQ?pwd=ivie 
 提取码：ivie 
 
-## Frame diagram/框架示意图
+## Frame diagram
 ### ![系统结构图](/sys.png)
 
-## Experimental index/实验指标
-### Results on a jumbled stacked box-shaped dataset/在杂乱堆叠的盒状物体数据集上的结果
+## Experimental index
+### Results on a jumbled stacked box-shaped dataset
 | **Modality** | **Method** | **mAP50** | **mAP50-95** |
 |:------------:|:----------:|:---------:|:------------:|
 | RGB          | YOLOv8     | 0.946     | 0.881        |
@@ -44,7 +46,7 @@ https://drive.google.com/file/d/1q8ADmzlx0v_DcgkVKSn5sjA1ZDqhoqtP/view?usp=drive
 | RGBD         | SuperYOLO  | 0.954     | 0.886        |
 | RGBD         | ours       | **0.985**     | **0.901**        |
 
-### Results on the LLVIP infrared dataset/在LLVIP红外数据集上的结果
+### Results on the LLVIP infrared dataset
 | **Modality** | **Method**               | **mAP50** | **mAP50-95** |
 |:------------:|:------------------------:|:---------:|:------------:|
 | RGB          | (2023)YOLOv8         | 0.908     | 0.535        |
